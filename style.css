@@ -1,3 +1,59 @@
+body{
+    margin: 0px;
+}
 .p1{
-    color: red;
+    color: grey;
+}
+.pageheading{
+    color: grey;
+    font-size: 40px;
+    text-align: center;
+}
+.maindiv{
+    display: flex;
+    height: 100%;
+}
+.leftdiv{
+    width: 70%;
+    padding-top: 150px;
+}
+.loginformdiv{
+    background-color:#FFFBF7;
+    width: 30%;
+    padding-top: 150px;
+    padding-left: 100px;
+    margin-left: -15px;
+}
+.radiodiv{
+   display: flex; 
+}
+.formlabel{
+    font-size: 22px;
+    color: grey;
+    padding-bottom: 10px;
+}
+.labeldiv{
+    padding-bottom: 2px;
+}
+.logininputdiv{
+    padding-bottom: 5px;
+}
+.remembermediv{
+    padding-bottom: 10px;
+    font-size: 17px;
+    color: grey;
+}
+.loginbuttondiv{
+    padding-left: 3px;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+.loginbutton{
+    width: 200px;
+}
+.logininput{
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 200px;
+    background-color: #FFFBF7;
 }
