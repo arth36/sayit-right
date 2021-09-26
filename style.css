@@ -1,59 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body{
     margin: 0px;
+    background-color: #fffbf7;
+}
+header{
+    display: flex;
+    background-color:#fffbf7;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    padding: 10px 20px 10px 20px;
+    padding-left: 40px;
+    font-size: 30px;       
+}
+.logoa:link{
+    text-decoration: none;
+}
+.logoa{
+    color: #808080;
+}  
+.nav{
+    padding-left: 350px;
+    font-size: 22px;   
+}
+.nav li{
+    float:left;
+    list-style-type: none;
+   padding: 10px 20px 10px 20px;
+} 
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: #808080;
+    padding: 10px;
+}   
+.nav li > ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+    background-color: #e67e22;
+}   
+.nav li > ul a{
+    width: 130px;
+    display: block;
+}  
+.nav li:hover > ul{
+    display: block;
+}
+.nav a:hover{
+    background-color: #EBF3FA;
 }
 .p1{
-    color: grey;
+    color: #808080;
 }
 .pageheading{
-    color: grey;
+    color:  #24221F;
     font-size: 40px;
     text-align: center;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 200px;
+    padding-left: 30px;
+}
+.loginpageinfo{
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    position: absolute;
+    top: 250px;
+    padding-left: 30px;
 }
 .maindiv{
+    color:#fff;
+}
+.loginbelowheader{
     display: flex;
     height: 100%;
 }
 .leftdiv{
-    width: 70%;
-    padding-top: 150px;
+    width: 80%;
+    padding-top: 75px;
+    background-color: #fff;
 }
 .loginformdiv{
     background-color:#FFFBF7;
     width: 30%;
-    padding-top: 150px;
+    padding-top: 160px;
     padding-left: 100px;
     margin-left: -15px;
 }
+.loginscreenimage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.leftimginfo{
+    position: absolute;
+    top:-30px;
+}
 .radiodiv{
-   display: flex; 
+   display: flex;
+   padding-bottom: 25px;
 }
 .formlabel{
     font-size: 22px;
-    color: grey;
+    color: #808080;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 .labeldiv{
-    padding-bottom: 2px;
+    padding-bottom: 15px;
 }
 .logininputdiv{
-    padding-bottom: 5px;
+    padding-bottom: 25px;
+    padding-left: 30px;
 }
 .remembermediv{
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     font-size: 17px;
-    color: grey;
+    color: #808080;
+    padding-left: 30px;
 }
 .loginbuttondiv{
-    padding-left: 3px;
-    padding-bottom: 3px;
+    padding-left: 30px;
+    padding-bottom: 15px;
     font-size: 17px;
 }
 .loginbutton{
-    width: 200px;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid #808080;
+    border-radius: 5px;
+}
+.loginbuttona{
+    text-decoration: none;
+    color: #808080;
 }
 .logininput{
     border: none;
-    border-bottom: 1px solid grey;
-    width: 200px;
+    border-bottom: 1px solid #808080;
+    width: 250px;
     background-color: #FFFBF7;
+}
+.logininput:focus{
+    outline: none;
+}
+.newaccdiv{
+    padding-left: 85px;
+}
+.newacca{
+    color: #808080;
+}
+.newacca:link{
+    text-decoration: none;
+}
+.newacca:hover{
+    text-decoration: underline;
+}
+.loginradiop{
+    color: #808080;
+}
+.loginicon{
+    padding-bottom: 5px;
+}
+.loginicondiv{
+    padding: 10px 5px 0px 5px;
+    text-align: center;
+}
+.loginicondiv > .loginradioinput{
+    visibility: hidden;
+    position: absolute; 
+}
+.loginicondiv > .loginradioinput + .loginradiop{
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.loginicondiv:hover{
+    border: 3px solid #808080;
+}
+.viewpassword{
+    margin-left: -20px;
 }

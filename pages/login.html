@@ -2,61 +2,100 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="maindiv">
-        <div class="leftdiv">
-            <p class="pageheading">Hey, please login!</p>
+    <div class="wrapper">
+        <div>
+            <div>
+                <header>
+                    <div class="logo">
+                        <h3><a class="logoa" href="../homepage.html">sayItRight</a></h3>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="../homepage.html">home</a>                       
+                            </li>
+                            <li>
+                                <a href="aboutUs.html">about us</a>
+                            </li>
+                            <li>
+                                <a href="#">services</a>
+                            </li>
+                            <li>
+                                <a href="contactUs.html">contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">blogs</a>
+                            </li>
+                            <li>
+                                <a href="#">my profile</a>
+                            </li>
+                            <li>
+                                <a href="login.html">login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
         </div>
-        <div class="loginformdiv">
-            <form>
-                <div class="radiodiv">
-                    <div>
-                        <input type="radio" id="student" name="userrole" value="Student" checked>
-                        <label for="student"> I am a Student</label><br>
-                    </div>
-                    <div>
-                        <input type="radio" id="professor" name="userrole" value="Professor">
-                        <label for="professor"> I am a Professor</label><br>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="labeldiv">
-                            <img src="../images/user.png">
-                            <label class="formlabel">Email id/Username: </label>
+        <div class="loginbelowheader">
+            <div class="leftdiv">
+                <img class="loginscreenimage" src="../images/loginpageimage.jpg"/>
+            </div>
+            <div class="loginformdiv">
+                <form>
+                    <div class="radiodiv">
+                        <div class="loginicondiv">
+                            <img class="loginicon" src="../images/student.png" name="userrole" checked/>
+                            <input class="loginradioinput" type="radio" name="loginradio" value="loginradioval" checked="checked"/>
+                            <p class="loginradiop">Student</p>
                         </div>
-                        <div class="logininputdiv">
-                            <input class="logininput" type="email"/>
+                        <div class="loginicondiv">
+                            <img class="loginicon" src="../images/faculty.png" name="userrole"/>
+                            <input class="loginradioinput" type="radio" value="loginradioval" name="loginradio" checked="checked"/>
+                            <p class="loginradiop">Faculty</p>
                         </div>
                     </div>
-                    <div >
-                        <div class="labeldiv">
-                            <img src="../images/password.png">
-                            <label class="formlabel">Password: </label>
-                        </div>
-                        <div class="logininputdiv">
-                            <input class="logininput" type="password"/>
-                        </div>
-                    </div> 
-                    <div class="remembermediv">
-                        <label>
-                            <input type="checkbox"/>
-                            remember me
-                        </label>
-                    </div>   
-                    <div class="loginbuttondiv">
-                        <button class="loginbutton" id="login_button" type="login">
-                            <a href="contactus.html">LogIn</a>
-                        </button>
-                    </div>
                     <div>
-                        <a href="register.html">
+                        <div>
+                            <div class="labeldiv">
+                                <img src="../images/user.png">
+                                <label class="formlabel">email id/username: </label>
+                            </div>
+                            <div class="logininputdiv">
+                                <input class="logininput" type="email"/>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="labeldiv">
+                                <img src="../images/password.png">
+                                <label class="formlabel">password: </label>
+                            </div>
+                            <div class="logininputdiv">
+                                <input class="logininput" type="password"/>
+                                <img class="viewpassword" src="../images/view.png">
+                            </div>
+                        </div> 
+                        <div class="remembermediv">
+                            <label>
+                                <input type="checkbox"/>
+                                remember me
+                            </label>
+                        </div>   
+                        <div class="loginbuttondiv">
+                            <button class="loginbutton" id="login_button" type="login">
+                                <a class="loginbuttona" href="contactus.html">login now!</a>
+                            </button>
+                        </div>
+                        <div class="newaccdiv">
                             <p>
-                                Create a new account?
+                                <a class="newacca" href="register.html">
+                                    Create a new account ?
+                                </a>
                             </p>
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </body>
