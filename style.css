@@ -62,7 +62,10 @@ footer{
     color: #fff;
 }
 .nav a:hover{
-    background-color: #EBF3FA;
+    background-color: #808080;
+    color: #fff;
+    border-radius: 3px;
+    transform: scale(1.1);
 }
 .p1{
     color: #808080;
@@ -237,7 +240,7 @@ footer{
 .footercr{
     color: #808080;
     margin-top: 14px;
-    margin-left: 450px;
+    margin-left: 530px;
 }
 .footerp{
     color: #808080;
@@ -252,4 +255,76 @@ footer{
     height: 20px;
     padding-left: 10px;
     padding-top: 15px;
+}
+.followimage:hover{
+    transform: scale(1.4);
+}
+.contactusdiv{
+    height: 83%;
+}
+.contactustextarea{
+    color: #808080;
+}
+.contactuslabel{
+    color: #808080;
+    font-size: 20px;
+}
+.contactuslabeldiv{
+    padding-bottom: 5px;
+}
+.contactusinput{
+    border: none;
+    border-bottom: 1px solid #808080;
+    width: 450px;
+    background-color: #fff;
+}
+.contactusinput:focus{
+    outline: none;
+    background-color: #FFFBF7;
+}
+.contactusinputdiv{
+    margin-bottom: 25px;
+}
+.contactusformdivs{
+    padding-bottom: 15px;
+}
+.innercontactusdiv{
+    padding-left: 500px;
+    padding-right: 465px;
+    padding-top: 30px;
+}
+.contactusform{
+    padding: 50px;
+    background-color: #fff;
+}
+.callusdiv{
+    display: flex;
+    padding-left: 115px;
+    padding-bottom: 15px;
+}
+.callusp{
+    padding-left: 15px;
+    color: #808080;
+}
+.contactusordiv{
+    display:flex;
+    align-items:center;
+    padding-bottom: 15px;
+}
+.contactusordiv hr{
+    width:207px;
+}
+.contactusfirsthr{
+    margin-right: 10px;
+}
+.contactussecondhr{
+    margin-left: 10px;
+}
+.contactusbutton{
+    width: 450px;
+    color: #808080;
+    margin-top: 30px;
+}
+.orp{
+    color: #808080;
 }
