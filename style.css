@@ -296,6 +296,11 @@ footer{
 .contactusform{
     padding: 50px;
     background-color: #fff;
+    border-radius: 25px;
+}
+.callimg{
+    width: 20px;
+    height: 20px;
 }
 .callusdiv{
     display: flex;
