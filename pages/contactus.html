@@ -16,25 +16,25 @@
                 <div class="nav">
                     <ul>
                         <li>
-                            <a href="../homepage.html">home</a>                      
+                            <a href="../homepage.html">Home</a>                      
                         </li>
                         <li>
-                            <a href="aboutUs.html">about us</a>
+                            <a href="aboutUs.html">About us</a>
                         </li>
                         <li>
-                            <a href="services.html">services</a>
+                            <a href="services.html">Services</a>
                         </li>
                         <li>
-                            <a href="contactUs.html">contact us</a>
+                            <a href="contactUs.html">Contact us</a>
                         </li>
                         <li>
-                            <a href="blogs.html">blogs</a>
+                            <a href="blogs.html">Blogs</a>
                         </li>
                         <li>
-                            <a href="#">my  profile</a>
+                            <a href="#">My profile</a>
                         </li>
                         <li>
-                            <a href="login.html">login</a>
+                            <a href="login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="contactusdiv">
             <div class="innercontactusdiv">
-                <form class="contactusform">
+                <form class="contactusform" action="mailto:arthmodi36@gmail.com" method="POST" enctype="text/plain">
                     <div class="formcontactus">
                         <div class="callusdiv">
                             <img class="callimg" src="../images/call.png"/>
@@ -59,7 +59,7 @@
                                     <label class="contactuslabel">first name: </label>
                                 </div>
                                 <div class="contactinputdiv">
-                                    <input class="contactusinput" type="text"/>
+                                    <input class="contactusinput" type="text" name="firstname"/>
                                 </div>
                             </div>
                             <div class="contactusformdivs">
@@ -67,7 +67,7 @@
                                     <label class="contactuslabel">last name: </label>
                                 </div>
                                 <div class="contactinputdiv">
-                                    <input class="contactusinput" type="text"/>
+                                    <input class="contactusinput" type="text" name="lastname"/>
                                 </div>
                             </div>
                             <div class="contactusformdivs">
@@ -75,7 +75,7 @@
                                     <label class="contactuslabel">email id: </label>
                                 </div>
                                 <div class="contactinputdiv">
-                                    <input class="contactusinput" type="email"/>
+                                    <input class="contactusinput" type="email" name="email"/>
                                 </div>
                             </div>
                             <div class="contactusformdivs">
@@ -83,7 +83,7 @@
                                     <label class="contactuslabel">phone #: </label>
                                 </div>
                                 <div class="contactinputdiv">
-                                    <input class="contactusinput" type="text"/>
+                                    <input class="contactusinput" type="text" name="phone"/>
                                 </div>
                             </div>
                             <div class="contactusformdivs">
@@ -91,11 +91,11 @@
                                     <label class="contactuslabel">reason for contact: </label>
                                 </div>
                                 <div class="contactinputdiv">
-                                    <textarea class="contactusinput"  type="text" rows="4" cols="50"></textarea>
+                                    <textarea class="contactusinput" type="text" rows="4" cols="50" name="reason"></textarea>
                                 </div>
                             </div>
                             <div>
-                                <button class="loginbutton contactusbutton">Submit</button>
+                                <button type="submit" class="loginbutton contactusbutton">Submit</button>
                             </div>
                         </div>
                     </div>

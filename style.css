@@ -199,6 +199,8 @@ footer{
 }
 .headerdiv{
     padding-bottom: 73px;
+    border-bottom: 1px solid #808080;
+    border-width: thin;
 }
 .homepagebelowheader{
     background-color: #fff;
@@ -230,6 +232,7 @@ footer{
     padding-left: 15px;
     font-size: 18px;
     color: #808080;
+    padding-top: 10px;
 }
 .footerdiv{
     display: flex;
@@ -332,4 +335,76 @@ footer{
 }
 .orp{
     color: #808080;
+}
+.aboutuscontainer{
+    padding: 0px 50px 0px 50px;
+    text-align: right;
+}
+.signupscreenimage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.signupleftdiv{
+    width: 40%;
+    background-color: #fff;
+}
+.aboutusfirstpart{
+    display: flex;
+}
+.aboutusfirstpartp{
+    width: 50%;
+    height: 100%;
+}
+.aboutusfirstpartpimg{
+    width: 50%;
+    height: 100%;
+}
+.aboutusyear{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    color: #5c5858;
+}
+.yearspan{
+    text-decoration: underline;
+    font-size: 28px;
+}
+.aboutusp{
+    font-size: 22px;
+    color: #808080;
+    text-align: center;
+    margin-top: 80px;
+}
+.aboutusimg{
+    width: 100%;
+}
+.homepageimageh3{
+    color: #808080;
+    text-align: center;
+    text-decoration: underline;
+}
+.signupinputdiv{
+    display: flex;
+}
+.signupinputdiv{
+    background-color:#FFFBF7;
+    padding-left: 100px;
+    margin-left: -15px;
+}
+.signupinputfirstdiv{
+    padding-top: 80px;
+}
+.signupformlabel{
+    font-size: 20px;
+    color: #808080;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.signuplabeldiv{
+    display: inline-block;
+    width: 35%;
+}
+.signupinputdiv1{
+    width: 65%;
 }
