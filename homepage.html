@@ -2,18 +2,34 @@
 <html>
     <head>
         <title>Say it Right</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script type = "text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".navtoggle").click(function(){
+                    $("body").toggleClass("opennav");
+                });
+            });
+        </script>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="headerdiv">
-                <header>
+        <div class="wrapper">          
+                <header class="headerdiv">
                     <div class="logo">
-                        <h3>
-                            <a class="logoa" href="homepage.html">sayItRight</a>
-                        </h3>
+                        <a class="logoa" href="homepage.html">sayItRight</a>
+                    </div>
+                    <div class="navtoggle">
+                        <span>
+                            
+                        </span>
+                        <span>
+                            
+                        </span>
+                        <span>
+                            
+                        </span>
                     </div>
                     <div class="nav">
                         <ul>
@@ -40,9 +56,8 @@
                             </li>
                         </ul>
                     </div>
-                </header>
-            </div>
-            <div class="homepagebelowheader">
+                </header>           
+            <div class="homepagebelowheader clearfix">
                 <div class="homepageoddimagediv homepageimagediv">
                     <img class="homepageimage" src="images/homepagefirstimage.jpg"/>
                     <div>
@@ -72,24 +87,26 @@
                     </div>
                 </div>
             </div>
-            <div>
+            
                 <footer>
                     <div class="footerdiv">
-                        <div class="logo">
+                        <div class="logo footercontent">
                             <h6>
                                 <a class="logoa footerlogo" href="homepage.html">sayItRight</a>
                             </h6>
                         </div>
-                        <div>
+                        <div class="footercontent">
                             <p class="footercr"><b>&#169 '21 sayItRight</b></p>
                         </div>
                         <div class="followusdiv">
                             <p class="footerp">follow us on: </p>
-                            <a href="https://www.linkedin.com/"><img class="linkedin followimage" src="images/linkedin.png"></a>
-                            <a href="https://www.twitter.com/"><img class="twitter followimage" src="images/twitter.png"></a>
-                            <a href="https://www.instagram.com/"><img class="github followimage" src="images/instagram.png"></a>
-                            <a href="https://www.github.com/"><img class="twitter followimage" src="images/github.png"></a>
-                            <a href="https://www.facebook.com/"><img class="facebook followimage" src="images/facebook.png"></a>
+                            <div>
+                                <a href="https://www.linkedin.com/"><img class="linkedin followimage" src="images/linkedin.png"></a>
+                                <a href="https://www.twitter.com/"><img class="twitter followimage" src="images/twitter.png"></a>
+                                <a href="https://www.instagram.com/"><img class="github followimage" src="images/instagram.png"></a>
+                                <a href="https://www.github.com/"><img class="twitter followimage" src="images/github.png"></a>
+                                <a href="https://www.facebook.com/"><img class="facebook followimage" src="images/facebook.png"></a>
+                            </div>
                         </div>
                     </div>
                 </footer>

@@ -1,4 +1,6 @@
 <head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -38,49 +40,20 @@
             </header>
         </div>
         <div class="loginbelowheader">
-            <div class="signupleftdiv">
-                <img class="signupscreenimage" src="../images/signup.jpg"/>
-            </div>
             <div class="signupformdiv">
                 <form>
+                    <div class="firstlastnameinput">
+                        <input class="signupnameinput signupinputfirst" type="text" placeholder="First Name"/>
+                        <input class="signupnameinput" type="text" placeholder="Last Name"/>
+                    </div>
                     <div>
-                        <div class="signupinputdiv1 signupinputfirstdiv">
-                            <div class="signuplabeldiv">
-                                <img src="../images/user.png">
-                                <label class="signupformlabel">email id/username: </label>
-                            </div>
-                            <div class="signupinputdiv">
-                                <input class="logininput" type="email"/>
-                            </div>
-                        </div>
-                        <div class="signupinputdiv1">
-                            <div class="signuplabeldiv">
-                                <img src="../images/password.png">
-                                <label class="signupformlabel">password: </label>
-                            </div>
-                            <div class="signupinputdiv">
-                                <input class="logininput" type="password"/>
-                                <img class="signupviewpassword" src="../images/view.png">
-                            </div>
-                        </div> 
-                        <div class="remembermediv">
-                            <label>
-                                <input type="checkbox"/>
-                                remember me
-                            </label>
-                        </div>   
-                        <div class="loginbuttondiv">
-                            <button class="loginbutton" id="login_button" type="login">
-                                <a class="loginbuttona" href="contactus.html">login now!</a>
-                            </button>
-                        </div>
-                        <div class="newaccdiv">
-                            <p>
-                                <a class="newacca" href="signup.html">
-                                    Create a new account ?
-                                </a>
-                            </p>
-                        </div>
+                        <input class="signupemailinput" type="text" placeholder="Email"/>
+                    </div>
+                    <div>
+                        <input class="signupemailinput" type="text" placeholder="Password"/>
+                    </div>
+                    <div>
+                        <input class="signupemailinput" type="text" placeholder="Confirm Password"/>
                     </div>
                 </form>
             </div>

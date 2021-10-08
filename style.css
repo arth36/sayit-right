@@ -1,28 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 * {
     padding: 0;
     margin: 0;
 }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
 body{
     margin: 0px;
     background-color: #fffbf7;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     display: flex;
     background-color:#fffbf7;
     height: 70px;
-    position: absolute;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 footer{
     display: flex;
     background-color:#fffbf7;
     height: 50px;
-    position: absolute;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .logo{
-    padding: 10px 20px 10px 20px;
-    padding-left: 40px;
     font-size: 30px;       
 }
 .logoa:link{
@@ -30,21 +46,21 @@ footer{
 }
 .logoa{
     color: #808080;
-}  
-.nav{
-    padding-left: 350px;
-    font-size: 22px;   
 }
 .nav li{
     float:left;
     list-style-type: none;
-   padding: 10px 20px 10px 20px;
-} 
+    padding: 10px 30px 10px 0px;
+}
+.nav li:last-child{
+    padding-right: 0px;
+}
 .nav a{
     display: block;
     text-decoration: none;
     color: #808080;
     padding: 10px;
+    font-size: 18px;
 }   
 .nav li > ul{
     display: none;
@@ -198,20 +214,22 @@ footer{
     margin-left: -20px;
 }
 .headerdiv{
-    padding-bottom: 73px;
     border-bottom: 1px solid #808080;
     border-width: thin;
 }
 .homepagebelowheader{
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #fff;
     width: 100%;
     height: auto;
 }
 .homepageoddimagediv{
     display: flex;
+    float: left;
     padding-top: 40px;
-    margin-left: 30px;
-    width: 800px;
+    margin-left: 10px;
+    max-width: 800px;
 }
 .homepageimage{
     width: 270px;
@@ -219,8 +237,9 @@ footer{
 }
 .homepageevenimagediv{
     display: flex;
-    margin-left: 680px;
-    width: 800px;
+    float: right;
+    max-width: 800px;
+    margin-right: 10px;
 }
 .homepageimagediv{
     padding:15px;
@@ -230,12 +249,16 @@ footer{
 }
 .homepageimagep{
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 17px;
     color: #808080;
     padding-top: 10px;
 }
 .footerdiv{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .footerlogo{
     margin-top: 14px;
@@ -243,12 +266,10 @@ footer{
 .footercr{
     color: #808080;
     margin-top: 14px;
-    margin-left: 530px;
 }
 .footerp{
     color: #808080;
     margin-top: 14px;
-    margin-left: 450px;
 }
 .followusdiv{
     display: flex;
@@ -264,6 +285,8 @@ footer{
 }
 .contactusdiv{
     height: 83%;
+    padding-top: 70px;
+    padding-bottom: 0px;
 }
 .contactustextarea{
     color: #808080;
@@ -292,9 +315,9 @@ footer{
     padding-bottom: 15px;
 }
 .innercontactusdiv{
-    padding-left: 500px;
-    padding-right: 465px;
     padding-top: 30px;
+    max-width: 560px;
+    margin: 0px auto;
 }
 .contactusform{
     padding: 50px;
@@ -339,6 +362,8 @@ footer{
 .aboutuscontainer{
     padding: 0px 50px 0px 50px;
     text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .signupscreenimage{
     width: 100%;
@@ -351,6 +376,7 @@ footer{
 }
 .aboutusfirstpart{
     display: flex;
+    align-items: center;
 }
 .aboutusfirstpartp{
     width: 50%;
@@ -363,7 +389,6 @@ footer{
 .aboutusyear{
     font-weight: bold;
     text-align: center;
-    margin-top: 60px;
     color: #5c5858;
 }
 .yearspan{
@@ -374,7 +399,7 @@ footer{
     font-size: 22px;
     color: #808080;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .aboutusimg{
     width: 100%;
@@ -384,27 +409,148 @@ footer{
     text-align: center;
     text-decoration: underline;
 }
-.signupinputdiv{
-    display: flex;
+.signupnameinput{
+    width: 48.4%;
+    box-sizing: border-box;
+    float: left;
 }
-.signupinputdiv{
-    background-color:#FFFBF7;
-    padding-left: 100px;
-    margin-left: -15px;
+.signupformdiv{
+    padding-top: 50px;
+    max-width: 510px;
+    margin: 0 auto;
 }
-.signupinputfirstdiv{
-    padding-top: 80px;
+.signupemailinput{
+    width: 100%;
 }
-.signupformlabel{
-    font-size: 20px;
-    color: #808080;
-    padding-bottom: 10px;
+.aboutuseven .aboutusfirstpartp{
+    order: 2;
+}
+.loginbelowheader{
+    padding-bottom: 5px;
+}
+.signupformdiv input{
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     padding-left: 10px;
+    padding-right: 10px;
 }
-.signuplabeldiv{
-    display: inline-block;
-    width: 35%;
+.signupinputfirst{
+    margin-right: 10px;
 }
-.signupinputdiv1{
-    width: 65%;
+
+
+
+/* Media CSS */
+
+@media (min-width: 768px){
+    .navtoggle span{
+        display: none;
+    }
+}
+
+@media (max-width:991px){
+    .nav li{
+        padding-right: 5px;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+}
+@media (max-width:767px){
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        height: 0px;
+        background: #ddd;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    .nav li{
+        width: 100%;
+        float: none;
+    }
+    .nav li a{
+        color: #808080;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .navtoggle{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 10;
+    }
+    .opennav .navtoggle span{
+        margin-bottom: 0px;
+    }
+    .opennav .navtoggle span:first-child{
+        transform: rotate(45deg);
+        position: relative;
+        top: 7px;
+    }
+    .opennav .navtoggle span:nth-child(2){
+        display: none;
+    }
+    .opennav .navtoggle span:last-child{
+        transform: rotate(135deg);
+    }
+    .navtoggle span{
+        width: 25px;
+        height: 2px;
+        background-color: #808080;
+        margin-bottom: 6px;
+        display: block;
+        margin-top: 5px;
+    }
+    .opennav .nav{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+    }
+    .nav li{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .footerdiv{
+        flex-wrap: wrap;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footercontent{
+        width: 100%;
+        text-align: center;
+    }
+    .followusdiv{
+        width: 100%;
+        justify-content: center;
+    }
+    .homepageimagediv{
+        display: block;
+        float: none;
+    }
+    .homepageimage{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .homepageimagep{
+        padding-left: 0px;
+    }
+    .homepageoddimagediv{
+        margin-left: 0px;
+    }
+    .homepageevenimagediv{
+        margin-right: 0px;
+    }
 }
