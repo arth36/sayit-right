@@ -4,43 +4,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style.css">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+    </script>
 </head> 
 <body>
     <div class="wrapper">
-        <div class="headerdiv">
-            <header class="headerdiv">
-                <div class="logo">
-                    <h3>
-                        <a class="logoa" href="../homepage.html">sayItRight</a>
-                    </h3>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li>
-                            <a href="../homepage.html">Home</a>                      
-                        </li>
-                        <li>
-                            <a href="aboutUs.html">About us</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="contactUs.html">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="blogs.html">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="#">My profile</a>
-                        </li>
-                        <li>
-                            <a href="login.html">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-        </div>
+        <header class="headerdiv">
+            <div class="logo">
+                <a class="logoa" href="../homepage.html">sayItRight</a>
+            </div>
+            <div class="navtoggle">
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+                <span>
+                        
+                </span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="../homepage.html">Home</a>                      
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">My profile</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <div class="contactusdiv">
             <div class="innercontactusdiv">
                 <form class="contactusform" action="mailto:arthmodi36@gmail.com" method="POST" enctype="text/plain">
@@ -101,21 +116,21 @@
                         </div>
                     </div>
                 </form>
-                </div>
             </div>
-        <div>
-            <footer>
-                <div class="footerdiv">
-                    <div class="logo">
-                        <h6>
-                            <a class="logoa footerlogo" href="homepage.html">sayItRight</a>
-                        </h6>
-                    </div>
+        </div>
+        <footer>
+            <div class="footerdiv">
+                <div class="logo footercontent">
+                    <h6>
+                        <a class="logoa footerlogo" href="../homepage.html">sayItRight</a>
+                    </h6>
+                </div>
+                <div class="footercontent">
+                    <p class="footercr"><b>&#169 '21 sayItRight</b></p>
+                </div>
+                <div class="followusdiv">
+                    <p class="footerp">follow us on: </p>
                     <div>
-                        <p class="footercr"><b>&#169 '21 sayItRight</b></p>
-                    </div>
-                    <div class="followusdiv">
-                        <p class="footerp">follow us on: </p>
                         <a href="https://www.linkedin.com/"><img class="linkedin followimage" src="../images/linkedin.png"></a>
                         <a href="https://www.twitter.com/"><img class="twitter followimage" src="../images/twitter.png"></a>
                         <a href="https://www.instagram.com/"><img class="github followimage" src="../images/instagram.png"></a>
@@ -123,7 +138,7 @@
                         <a href="https://www.facebook.com/"><img class="facebook followimage" src="../images/facebook.png"></a>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
