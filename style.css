@@ -442,6 +442,201 @@ footer{
 .footercontent{
     margin-top: 14px;
 }
+.innerhomemanagesection{
+    background-color: #b8b7b7;
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.homemanagesection{
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.homemanagesectionheading{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.innerhomemanagesection:hover{
+    background-color: #808080;
+    transform: scale(1.1);   
+}
+
+
+/* slider css */
+
+.slider-banner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .slider-banner input { display: none; }
+  .slider-image {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    border: 6px solid white;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: left .2s ease-in;
+    overflow: hidden;
+  }
+  
+  .slider-image img { width: 100%; }
+  .nav label {
+    position: absolute;
+    top: 40%;
+    display: block;
+    color: rgba(255,255,255,.5);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    opacity: 0;
+    z-index: 9;
+  }
+  
+  input:checked + .slider-image {
+    position: absolute;
+    display: inline-block;
+    opacity: 1; 
+    visibility: visible;
+    transition: left .2s ease-in;
+  }
+  
+  .nav label:hover { opacity: 1; }
+  .slider-image img:hover + .nav label { opacity: .75; }
+  .nav .prev { left: 0; border-radius: 0  10px 10px 0; }
+  .nav .next { right: 0; border-radius: 10px  0 0 10px; }
+  
+  .bullet-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .bullet {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    background-color: #555;
+    border: 1px solid #111;
+  }
+  
+  .bullet:first-child { border-radius: 10px 0 0 10px; }
+  .bullet:last-child { border-radius: 0 10px 10px 0; }
+  
+  input#slideA:checked ~ .bullet-nav label#bulletA,
+  input#slideB:checked ~ .bullet-nav label#bulletB,
+  input#slideC:checked ~ .bullet-nav label#bulletC {
+    background-color: #FF6464;
+  }
+  
+
+.homepagebelowslider{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+@keyframes slide{
+    0%{left:0%;}
+    9%{left:0%;}
+    18%{left:-100%;}
+    27%{left:-100%;}
+    36%{left:-200%;}
+    45%{left:-200%;}
+    54%{left:-300%;}
+    63%{left:-300%;}
+    72%{left:-400%;}
+	81%{left:-400%;}
+	90%{left:-500%;}
+	100%{left:-500%;}
+}
+#slider {
+    overflow: hidden;
+    margin: 15px;
+    margin-bottom: 40px;
+}
+#slider figure{
+    position:relative;
+    width:600%;
+    margin:0px;
+    left:0px;
+    text-align:left;
+    animation: 30s slide infinite;
+}
+#slider figure img{
+    float:left;
+    width:16.6666%;     
+    height:600px;
+    filter: grayscale(50%); 
+}
+   
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}  
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}  
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}  
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}  
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.managestudenttable{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+form caption{
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+.profileannouncementp{
+    text-align: center;
+    font-size: 1.5em;
+}
+.profileannouncementformdiv{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
 
 
 /* Media CSS */
@@ -602,5 +797,77 @@ footer{
     }
     .contactuslabel{
         font-size: 18px;
+    }
+    .contactusdiv{
+        height: 70%;
+    }
+    .homemanagesection{
+        width: 100%;
+    }
+    .innerhomemanagesection{
+        margin-bottom: 15px;
+    }
+    .tabla table tr th{
+        font-size: 0.7em;
+        padding: 0px;
+    }
+    .tabla{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 1px;
+        border-radius: 10px;
+    }
+    .tabla table{
+        padding: 2px;
+        margin: 5px;
+    }
+    .tituloD{
+        font-size: 0.9em;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .todo nav ul li{
+        font-size: 0.7em;
+        font-weight: 300;
+        margin-left: 2px;
+        padding: 10px;
+    }
+    .flecha{
+        font-size: 0.6em;
+    }
+    .formularios form{
+        margin: 10px;
+    }
+    .formularios form input{
+        font-family: 'Muli', sans-serif;
+        padding: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border: solid 1px #d1d1d1;
+        border-radius: 5px;
+    }
+    .caja{
+        width: 70%;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }  
+    form{
+        width: 90%;
+    }
+    .grafico{
+        margin: 5px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: solid 1px #d1d1d1;
+    }
+    .panelD h2{
+        font-size: 1em;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-right: 5px;
     }
 }
