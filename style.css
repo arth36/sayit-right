@@ -443,7 +443,7 @@ footer{
     margin-top: 14px;
 }
 .innerhomemanagesection{
-    background-color: #b8b7b7;
+    background-color: #cacaca;
     text-align: center;
     padding: 50px;
     border-radius: 8px;
@@ -466,6 +466,54 @@ footer{
     background-color: #808080;
     transform: scale(1.1);   
 }
+.myprofilemaindiv{
+    margin-top: 20px;
+}
+.announcementcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;   
+}
+input[type="file"]{
+    position: absolute;
+    z-index: -1;
+    top: 6px;
+    left: 87px;
+    font-size: 15px;
+    color: rgb(153,153,153);
+}
+.button-wrap{
+    position: relative;
+    margin-right: 70px;
+}
+.new-button{
+    display: inline-block;
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ccc;
+    font-size: 16px;
+    color: #000;
+}
+.announcementsubmitdiv{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+}
+.announcementsubmitbutton{
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ccc;
+    font-size: 16px;
+    color: #000;
+    margin-left: 150px;
+    max-width: 350px;
+    border-color: #ccc;
+}
 
 
 /* slider css */
@@ -478,10 +526,10 @@ footer{
     text-align: center;
     box-sizing: border-box;
     overflow: hidden;
-  }
+}
   
-  .slider-banner input { display: none; }
-  .slider-image {
+.slider-banner input { display: none; }
+.slider-image {
     position: absolute;
     left: 0;
     display: inline-block;
@@ -493,10 +541,10 @@ footer{
     visibility: hidden;
     transition: left .2s ease-in;
     overflow: hidden;
-  }
+}
   
-  .slider-image img { width: 100%; }
-  .nav label {
+.slider-image img { width: 100%; }
+.nav label {
     position: absolute;
     top: 40%;
     display: block;
@@ -511,53 +559,43 @@ footer{
     text-align: center;
     opacity: 0;
     z-index: 9;
-  }
-  
-  input:checked + .slider-image {
+}  
+input:checked + .slider-image {
     position: absolute;
     display: inline-block;
     opacity: 1; 
     visibility: visible;
     transition: left .2s ease-in;
-  }
-  
-  .nav label:hover { opacity: 1; }
-  .slider-image img:hover + .nav label { opacity: .75; }
-  .nav .prev { left: 0; border-radius: 0  10px 10px 0; }
-  .nav .next { right: 0; border-radius: 10px  0 0 10px; }
-  
-  .bullet-nav {
+}  
+.nav label:hover { opacity: 1; }
+.slider-image img:hover + .nav label { opacity: .75; }
+.nav .prev { left: 0; border-radius: 0  10px 10px 0; }
+.nav .next { right: 0; border-radius: 10px  0 0 10px; }  
+.bullet-nav {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-  
-  .bullet {
+}  
+.bullet {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 10px;
     background-color: #555;
     border: 1px solid #111;
-  }
-  
-  .bullet:first-child { border-radius: 10px 0 0 10px; }
-  .bullet:last-child { border-radius: 0 10px 10px 0; }
-  
-  input#slideA:checked ~ .bullet-nav label#bulletA,
-  input#slideB:checked ~ .bullet-nav label#bulletB,
-  input#slideC:checked ~ .bullet-nav label#bulletC {
+}  
+.bullet:first-child { border-radius: 10px 0 0 10px; }
+.bullet:last-child { border-radius: 0 10px 10px 0; }
+input#slideA:checked ~ .bullet-nav label#bulletA,
+input#slideB:checked ~ .bullet-nav label#bulletB,
+input#slideC:checked ~ .bullet-nav label#bulletC {
     background-color: #FF6464;
-  }
-  
-
+}
 .homepagebelowslider{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
-
-
 @keyframes slide{
     0%{left:0%;}
     9%{left:0%;}
@@ -631,11 +669,34 @@ form caption{
 .profileannouncementp{
     text-align: center;
     font-size: 1.5em;
+    margin-bottom: 15px;
 }
 .profileannouncementformdiv{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
+}
+.studentprofilepageflex{
+    display: flex;
+}
+.managestudentrecording{
+    width: 50%;
+}
+.profileannouncementformdiv{
+    width: 50%;
+}
+.namerecordinginput{
+    left: 99px !important;
+}
+.recordingbutton{
+    display: inline-block;
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ccc;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
 }
 
 
@@ -869,5 +930,50 @@ form caption{
         padding-left: 5px;
         padding-top: 10px;
         padding-right: 5px;
+    }
+    .tdclass{
+        font-size: 12px;
+    }
+    .thclass{
+        font-size: 9px;
+    }
+    .announcementinput{
+        max-width: 345px;
+    }
+    .announcementcontainer{
+        display: block;
+    }
+    input[type="file"]{
+        left: 90px;
+    }
+    .new-button{
+        width: 163px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .announcementsubmitbutton{
+        margin-left: 0px;
+        width: 345px;
+    }
+    .profileannouncementp{
+        font-size: 1.3em;
+    }
+    table caption{
+        font-size: 1.3em;
+    }
+    .studentprofilepageflex{
+        display: block;
+    }
+    .managestudentrecording{
+        margin-left: 15px;
+        width: 100%;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+    .profileannouncementformdiv{
+        width: 100%;
+    }
+    .recordingbutton{
+        width: 173px;
     }
 }
