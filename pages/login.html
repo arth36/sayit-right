@@ -2,6 +2,18 @@
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -39,6 +51,12 @@
                     </li>
                     <li>
                         <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -51,7 +69,11 @@
                 <img class="loginscreenimage" src="../images/loginpageimage.jpg"/>
             </div>
             <div class="loginformdiv">
-                <form>
+                <form class="loginform">
+                    <div class="labeldiv">
+                        <img src="../images/role.png">
+                        <label class="formlabel">Select your user role: </label>
+                    </div>
                     <div class="radiodiv">
                         <div class="loginicondiv">
                             <img class="loginicon" src="../images/student.png" name="userrole" checked/>
@@ -62,6 +84,16 @@
                             <img class="loginicon" src="../images/faculty.png" name="userrole"/>
                             <input class="loginradioinput" type="radio" value="loginradioval" name="loginradio" checked="checked"/>
                             <p class="loginradiop">Faculty</p>
+                        </div>
+                        <div class="loginicondiv">
+                            <img class="loginicon" src="../images/advisor.png" name="userrole" checked/>
+                            <input class="loginradioinput" type="radio" name="loginradio" value="loginradioval" checked="checked"/>
+                            <p class="loginradiop">Advisor</p>
+                        </div>
+                        <div class="loginicondiv">
+                            <img class="loginicon" src="../images/admin.png" name="userrole" checked/>
+                            <input class="loginradioinput" type="radio" name="loginradio" value="loginradioval" checked="checked"/>
+                            <p class="loginradiop">Admin</p>
                         </div>
                     </div>
                     <div>

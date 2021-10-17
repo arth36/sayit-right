@@ -1,0 +1,249 @@
+<!---
+Name: Ahir Kunjal, UTA ID: 1001877263
+Name: Modi Arth, UTA ID: 1001979538
+Name: Sheth Devanshi, UTA ID: 1001959019
+--->
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="headerdiv">
+            <div class="logo">                
+                <a class="logoa" href="../homepage.html">sayItRight</a>
+            </div>
+            <div class="navtoggle">
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+                <span>
+                        
+                </span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="../homepage.html">Home</a>                      
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="myprofilemaindiv">
+            <div class="managestudenttable">
+                <table>
+                    <caption>Manage Everybody</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="tdclass" data-label="ID">axm9538</td>
+                            <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Phone">6825528689</td>
+                            <td class="tdclass" data-label="Type">W</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tdclass" data-label="ID">kxa7263</td>
+                            <td class="tdclass" data-label="Name">Kunjal Ahir</td>
+                            <td class="tdclass" data-label="Phone">7777728787</td>
+                            <td class="tdclass" data-label="Type">W</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tdclass" data-label="ID">das9019</td>
+                            <td class="tdclass" data-label="Name">Devanshi Sheth</td>
+                            <td class="tdclass" data-label="Phone">5548989898</td>
+                            <td class="tdclass" data-label="Type">W</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="tdclass" data-label="ID">hhs9538</td>
+                            <td class="tdclass" data-label="Name">Andrew Arlington</td>
+                            <td class="tdclass" data-label="Phone">6825528787</td>
+                            <td class="tdclass" data-label="Type">P</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="managestudenttable">
+                <table>
+                    <caption>Manage Courses</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Professor</th>
+                            <th scope="col">Schedule</th>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="tdclass" data-label="Submission">WDM</td>
+                            <td class="tdclass" data-label="ID">axm9538</td>
+                            <td class="tdclass" data-label="Name">Elizabeth Diaz</td>
+                            <td class="tdclass" data-label="Action"><img src="../images/edit.png"/></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tdclass" data-label="Submission">DB</td>
+                            <td class="tdclass" data-label="ID">ahs8798</td>
+                            <td class="tdclass" data-label="Name">Abhishek Santra</td>
+                            <td class="tdclass" data-label="Action"><img src="../images/edit.png"/></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tdclass" data-label="Submission">DAA</td>
+                            <td class="tdclass" data-label="ID">hjs7878</td>
+                            <td class="tdclass" data-label="Name">Noman Mufti</td>
+                            <td class="tdclass" data-label="Action"><img src="../images/edit.png"/></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="tdclass" data-label="Submission">DAMT</td>
+                            <td class="tdclass" data-label="ID">fgj6756</td>
+                            <td class="tdclass" data-label="Name">Negin Feridoun</td>
+                            <td class="tdclass" data-label="Action"><img src="../images/edit.png"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="managestudenttable">
+                <table>
+                    <caption>Student Recordings</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Recording</th>
+                            <th scope="col">Language</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
+                            <td class="tdclass" data-label="Language">E</td>
+                            <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tdclass" data-label="Name">Kunjal Ahir</td>
+                            <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
+                            <td class="tdclass" data-label="Language">E</td>
+                            <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tdclass" data-label="Name">Devanshi Sheth</td>
+                            <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
+                            <td class="tdclass" data-label="Language">E</td>
+                            <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="tdclass" data-label="Name">Mike Jhones</td>
+                            <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
+                            <td class="tdclass" data-label="Language">E</td>
+                            <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="profileannouncementformdiv">
+                <form class="adminannouncement">
+                    <p class="profileannouncementp">Make an Announcement</p>
+                    <div class="announcementdiv">
+                        <div class="announcementinputdiv">
+                            <textarea placeholder="write announcement here" class="announcementinput" type="text" rows="5" cols="200" name="announcement"></textarea>
+                            <div class="announcementcontainer">
+                                <div class="button-wrap">
+                                    <label class ="new-button" for="upload">Want to attach Image?   
+                                    <input id="upload" type="file" >
+                                </div>
+                                <button type ="submit" class="announcementsubmitbutton">Make an Announcement</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footerdiv">
+                <div class="logo footercontent">
+                    <h6>
+                        <a class="logoa footerlogo" href="../homepage.html">sayItRight</a>
+                    </h6>
+                </div>
+                <div class="footercontent">
+                    <p class="footercr"><b>&#169 '21 sayItRight</b></p>
+                </div>
+                <div class="followusdiv">
+                    <p class="footerp">follow us on: </p>
+                    <div>
+                        <a href="https://www.linkedin.com/"><img class="linkedin followimage" src="../images/linkedin.png"></a>
+                        <a href="https://www.twitter.com/"><img class="twitter followimage" src="../images/twitter.png"></a>
+                        <a href="https://www.instagram.com/"><img class="github followimage" src="../images/instagram.png"></a>
+                        <a href="https://www.github.com/"><img class="twitter followimage" src="../images/github.png"></a>
+                        <a href="https://www.facebook.com/"><img class="facebook followimage" src="../images/facebook.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

@@ -4,6 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style.css">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
 </head> 
 <body>
     <div class="wrapper">
@@ -41,6 +53,12 @@
                     </li>
                     <li>
                         <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -53,28 +71,28 @@
                 <img class="homepageimage" src="../images/homepagefirstimage.jpg"/>
                 <div>
                     <h2 class="homepageimageh3">Manage Classes</h2>
-                    <p class="homepageimagep">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere mauris nisi, scelerisque vestibulum lectus finibus ac. Etiam interdum faucibus finibus. Nam eros arcu, venenatis nec tristique ac, pretium quis nulla. Suspendisse potenti. Fusce elementum quam nec interdum accumsan. Maecenas pharetra gravida ullamcorper. Nulla eros justo, efficitur vitae luctus imperdiet, dapibus quis lorem. Maecenas ultricies congue sapien, vitae mattis purus vestibulum vel.</p>
+                    <p class="homepageimagep">The student can manage his/her classes through our website.It allows the student to choose various courses he/she is interested in. The website also has the facility to select professors and lecture timings according to the student's will.</p>
                 </div>
             </div>
             <div class="homepageevenimagediv homepageimagediv">
                 <img class="homepageimage" src="../images/homepagesecondimage.jpg"/>
                 <div>
-                    <h2 class="homepageimageh3">Manage Classes</h2>
-                    <p class="homepageimagep">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere mauris nisi, scelerisque vestibulum lectus finibus ac. Etiam interdum faucibus finibus. Nam eros arcu, venenatis nec tristique ac, pretium quis nulla. Suspendisse potenti. Fusce elementum quam nec interdum accumsan. Maecenas pharetra gravida ullamcorper. Nulla eros justo, efficitur vitae luctus imperdiet, dapibus quis lorem. Maecenas ultricies congue sapien, vitae mattis purus vestibulum vel.</p>
+                    <h2 class="homepageimageh3">Record Name</h2>
+                    <p class="homepageimagep">A person's name carries his/her identity and cultural meaning with him. Through this website, he/she can record their names sound and upload in their profile, which would help others in articulating it correctly.</p>
                 </div>
             </div>
             <div class="homepageoddimagediv homepageimagediv">
                 <img class="homepageimage" src="../images/homepagethirdimage.jpg"/>
                 <div>
-                    <h2 class="homepageimageh3">Manage Classes</h2>
-                    <p class="homepageimagep">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere mauris nisi, scelerisque vestibulum lectus finibus ac. Etiam interdum faucibus finibus. Nam eros arcu, venenatis nec tristique ac, pretium quis nulla. Suspendisse potenti. Fusce elementum quam nec interdum accumsan. Maecenas pharetra gravida ullamcorper. Nulla eros justo, efficitur vitae luctus imperdiet, dapibus quis lorem. Maecenas ultricies congue sapien, vitae mattis purus vestibulum vel.</p>
+                    <h2 class="homepageimageh3">Professor's Profile</h2>
+                    <p class="homepageimagep">A professor will be able to add/remove students in his course. He/she will also be able to schedule classes for their respective courses. They will be able to post an announcement which would be visible to all.</p>
                 </div>
             </div>
             <div class="homepageevenimagediv homepageimagediv">
                 <img class="homepageimage" src="../images/homepagefourthimage.jpg"/>
                 <div>
-                    <h2 class="homepageimageh3">Manage Classes</h2>
-                    <p class="homepageimagep">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere mauris nisi, scelerisque vestibulum lectus finibus ac. Etiam interdum faucibus finibus. Nam eros arcu, venenatis nec tristique ac, pretium quis nulla. Suspendisse potenti. Fusce elementum quam nec interdum accumsan. Maecenas pharetra gravida ullamcorper. Nulla eros justo, efficitur vitae luctus imperdiet, dapibus quis lorem. Maecenas ultricies congue sapien, vitae mattis purus vestibulum vel.</p>
+                    <h2 class="homepageimageh3">Manage Blogs</h2>
+                    <p class="homepageimagep">Students as well as professors will be able to create and manage blogs on the website. Blogs can be related to any topic and will be visible to everyone. Users can also hit a like button to the blogs they like.</p>
                 </div>
             </div>
         </div>

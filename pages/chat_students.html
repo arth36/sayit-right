@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <title>ChatBox</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
+</head> 
+<body>
+    <div class="wrapper">
+        <header class="headerdiv">
+            <div class="logo">
+                <a class="logoa" href="../homepage.html">sayItRight</a>
+            </div>
+            <div class="navtoggle">
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+                <span>
+                        
+                </span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="../homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="mainsec">
+            <div class="headsec">
+                <div class="headRightsec">
+                    <div class="headRightsub">
+                        <h3>Andrew Arlington</h3>
+                        <small>Professor</small>
+                    </div>
+                    </div>
+            </div>
+            <div class="bodysec">
+                <div class="rightsec">
+                    <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <ul>
+                    <li class="leftmsg">
+                    <div class="leftmsg-sub">
+                    <img src="../images/manageprofile.png">
+                    <div class="descmsg">
+                    Hello, What are your doubts regarding this subject, feel free to ask anything, happy to help.
+                    </div>
+                    <small>12:20 pm</small>
+                    </div>
+                    </li>
+                    <li class="rightmsg">
+                    <div class="leftmsg-sub">
+                    <img src="../images/manageprofile.png">
+                    <div class="descmsg">
+                    Hello Sir, I have few doubts regarding the project that you mentioned in the lecture.
+                    </div>
+                    <small>12:22 pm</small>
+                    </div>
+                    </li>
+                    <li class="msg-day"><small>Friday</small></li>
+                    <li class="leftmsg">
+                    <div class="leftmsg-sub">
+                    <img src="../images/manageprofile.png">
+                    <div class="descmsg">
+                    Yes please, go ahead and ask your doubts. 
+                    </div>
+                    <small>10:14 am</small>
+                    </div>
+                    </li>
+                    <li class="rightmsg">
+                    <div class="leftmsg-sub">
+                    <img src="../images/manageprofile.png">
+                    <div class="descmsg">
+                    Is the chat screen to be implemented at the current phase or it can be done later ?
+                    </div>
+                    <small>11:15 am</small>
+                    </div>
+                    </li>
+                    <li class="leftmsg">
+                    <div class="leftmsg-sub">
+                    <img src="../images/manageprofile.png">
+                    <div class="descmsg">
+                    No, You need to do a static design and then you can implement it in later phases. 
+                    </div>
+                    <small>05:25 am</small>
+                    </div>
+                    </li> 
+                    <li class="rightmsg">
+                    <div class="leftmsg-sub">
+                    <img src="../images/manageprofile.png">
+                    <div class="descmsg">
+                    Okay Sir, Thank you for your help, I'll keep that in mind. 
+                    Bbye, have a nice day
+                    </div>
+                    <small>05:25 am</small>
+                    </div>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="rightsec-bottom">
+                    <form>
+                    <input type="text" name="" placeholder="type here...">
+                    <button class="sendbtn"><i class="send_now"><img class="sendbtn" src="../images/send.png"/></i></button>
+                    </form>
+                    </div>
+                    </div>
+            </div>
+        </div>
+       
+        <footer>
+            <div class="footerdiv">
+                <div class="logo footercontent">
+                    <h6>
+                        <a class="logoa footerlogo" href="../homepage.html">sayItRight</a>
+                    </h6>
+                </div>
+                <div class="footercontent">
+                    <p class="footercr"><b>&#169 '21 sayItRight</b></p>
+                </div>
+                <div class="followusdiv">
+                    <p class="footerp">follow us on: </p>
+                    <div>
+                        <a href="https://www.linkedin.com/"><img class="linkedin followimage" src="../images/linkedin.png"></a>
+                        <a href="https://www.twitter.com/"><img class="twitter followimage" src="../images/twitter.png"></a>
+                        <a href="https://www.instagram.com/"><img class="github followimage" src="../images/instagram.png"></a>
+                        <a href="https://www.github.com/"><img class="twitter followimage" src="../images/github.png"></a>
+                        <a href="https://www.facebook.com/"><img class="facebook followimage" src="../images/facebook.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>   
+    </div>
+</body>

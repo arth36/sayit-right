@@ -2,46 +2,71 @@
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="headerdiv">
-            <header>
-                <div class="logo">
-                    <h3>
-                        <a class="logoa" href="../homepage.html">sayItRight</a>
-                    </h3>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li>
-                            <a href="../homepage.html">Home</a>                      
-                        </li>
-                        <li>
-                            <a href="aboutUs.html">About us</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="contactUs.html">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="blogs.html">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="#">My profile</a>
-                        </li>
-                        <li>
-                            <a href="login.html">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-        </div>
-        <div class="loginbelowheader">
+        <header class="headerdiv">
+            <div class="logo">
+                <a class="logoa" href="../homepage.html">sayItRight</a>
+            </div>
+            <div class="navtoggle">
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+                <span>
+                        
+                </span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="../homepage.html">Home</a>                      
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="loginbelowheader signupbelowheader">
             <div class="signupformdiv">
-                <form>
+                <form class="signupform">
                     <div class="firstlastnameinput">
                         <input class="signupnameinput signupinputfirst" type="text" placeholder="First Name"/>
                         <input class="signupnameinput" type="text" placeholder="Last Name"/>
@@ -55,22 +80,41 @@
                     <div>
                         <input class="signupemailinput" type="text" placeholder="Confirm Password"/>
                     </div>
+                    <div>
+                        <input class="signupemailinput" type="date" id="birthday" placeholder="Date of Birth" name="birthday">
+                    </div>
+                    <div class="selectrole">
+                        <select>
+                            <option value="1">Choose Gender</option>
+                            <option value="2">Male</option>
+                            <option value="3">Female</option>
+                        </select>
+                    </div>
+                    <div class="selectrole">
+                        <select>
+                            <option value="1">Choose User Role</option>
+                            <option value="2">Student</option>
+                            <option value="3">Professor</option>
+                            <option value="4">Advisor</option>
+                        </select>
+                    </div>
+                    <button class="signupbutton">Sign up now!</button>
                 </form>
             </div>
         </div>
-        <div>
-            <footer>
-                <div class="footerdiv">
-                    <div class="logo">
-                        <h6>
-                            <a class="logoa footerlogo" href="homepage.html">sayItRight</a>
-                        </h6>
-                    </div>
+        <footer>
+            <div class="footerdiv">
+                <div class="logo footercontent">
+                    <h6>
+                        <a class="logoa footerlogo" href="../homepage.html">sayItRight</a>
+                    </h6>
+                </div>
+                <div class="footercontent">
+                    <p class="footercr"><b>&#169 '21 sayItRight</b></p>
+                </div>
+                <div class="followusdiv">
+                    <p class="footerp">follow us on: </p>
                     <div>
-                        <p class="footercr"><b>&#169 '21 sayItRight</b></p>
-                    </div>
-                    <div class="followusdiv">
-                        <p class="footerp">follow us on: </p>
                         <a href="https://www.linkedin.com/"><img class="linkedin followimage" src="../images/linkedin.png"></a>
                         <a href="https://www.twitter.com/"><img class="twitter followimage" src="../images/twitter.png"></a>
                         <a href="https://www.instagram.com/"><img class="github followimage" src="../images/instagram.png"></a>
@@ -78,7 +122,7 @@
                         <a href="https://www.facebook.com/"><img class="facebook followimage" src="../images/facebook.png"></a>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>

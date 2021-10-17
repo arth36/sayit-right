@@ -12,6 +12,10 @@
                     $("body").toggleClass("opennav");
                 });
             });
+            $(".nav li a").click(function(){
+                var target = $(this).parent().children(".nav li ul");
+                $(target).slideToggle();
+            });
         </script>
     </head>
     <body>
@@ -49,7 +53,13 @@
                             <a href="pages/blogs.html">Blogs</a>
                         </li>
                         <li>
-                            <a href="pages/myprofileprof.html">My profile</a>
+                            <a href="#">My profile</a>
+                            <ul>
+                                <li><a href="pages/myprofileadmin.html">Manage Admin</a></li>
+                                <li><a href="pages/myprofilestudent.html">Manage Student</a></li>
+                                <li><a href="pages/myprofileprof.html">Manage Professor</a></li>
+                                <li><a href="pages/myprofileadvisor.html">Manage Advisor</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="pages/login.html">Login</a>
@@ -72,37 +82,63 @@
                 </div>
                 
                 <div class="homepagebelowslider">
-                    <div class="homemanagesection">
-                        <a href="#" class="innerhomemanagesection">
-                            <h3 class="homemanagesectionheading">Manage Classes</h3>
-                            <img src="../Phase-1/images/manageclass.png"/>
-                        </a>
+                    <p class="testheading">Testimonials</p>
+                    <div class="homepagetestimony">
+                        <img class="testimage" src="./images/test1.jpg"/>
+                        <div>
+                            <h2 class="testname">Carly Jones</h2>
+                            <p class="testcontent">“My managing courses and classes has become easy with the help of SayItRight. I got Continuous
+                                support from the professors through this medium and that is the reason I have been excelling in my
+                                studies. My experience with UTA has turned into a journey I never thought would be made so easy
+                                by SayItRight, and I could not be more thankful.”</p>
+                        </div>
                     </div>
-                    <div class="homemanagesection">
-                        <a href="#" class="innerhomemanagesection">
-                            <h3 class="homemanagesectionheading">Manage Homework</h3>
-                            <img src="../Phase-1/images/manageschedule.png"/>
-                        </a>        
+                    <div class="homepagetestimony">
+                        <img class="testimage" src="./images/test2.jpg"/>
+                        <div>
+                            <h2 class="testname">Mecenziie Haoche</h2>
+                            <p class="testcontent">“As a professor, every year I get to meet a lot of students belonging to different countries and
+                                culture, and it is important for me to pronounce their names correctly. Now, whenever I am
+                                confused about a student’s name pronunciation, I just visit the website and it gives me the sound of
+                                the name in the students own voice making it a piece of cake for me.“</p>
+                        </div>
                     </div>
-                    <div class="homemanagesection">
-                        <a href="#" class="innerhomemanagesection">
-                            <h3 class="homemanagesectionheading">Manage Profile</h3>
-                            <img src="../Phase-1/images/manageprofile.png"/>
-                        </a>
+                    <div class="homepagetestimony">
+                        <img class="testimage" src="./images/test3.jpg"/>
+                        <div>
+                            <h2 class="testname">Smith Louis</h2>
+                            <p class="testcontent">“SayItRight made scheduling for classes and courses easy. It allows me to manage my every school work with such great efficiency. The most exciting feature is the name recording, I can upload the pronounciation and hence not facing any issues in correcting my name sound when talking to professor. Also, I loved how professor can post an announcement so that if one have missed the lecture can see the important announcements made. Totally, satisfied with the website“</p>
+                        </div>
                     </div>
                 </div>
                 <div class="homepagebelowslider">
-                    <div class="homepageabovefooterfirst">
-                        <p>Manage Class</p>
-                        <p>hdbasjcndhcgasjxmjcbdycndscj bdsycdwbcjsd jhdsbcdwbcnjdscadksmxkqedncecudskc dschdsbcudwjcndsj dsjcndwjc dscjdwbcdehfcjdnc hyrevfusdcm dsjcvdwyfchdwucmdaskcidufhweucimsdjcvbsyc</p>
-                    </div>
-                    <div class="homepageabovefootersecond">
-                        <p>Manage Class</p>
-                        <p>hdbasjcndhcgasjxmjcbdycndscj bdsycdwbcjsd jhdsbcdwbcnjdscadksmxkqedncecudskc dschdsbcudwjcndsj dsjcndwjc dscjdwbcdehfcjdnc hyrevfusdcm dsjcvdwyfchdwucmdaskcidufhweucimsdjcvbsyc</p>
-                    </div>
-                    <div class="homepageabovefooterthird">
-                        <p>Manage Class</p>
-                        <p>hdbasjcndhcgasjxmjcbdycndscj bdsycdwbcjsd jhdsbcdwbcnjdscadksmxkqedncecudskc dschdsbcudwjcndsj dsjcndwjc dscjdwbcdehfcjdnc hyrevfusdcm dsjcvdwyfchdwucmdaskcidufhweucimsdjcvbsyc</p>
+                    <p class="testheading">Our Team</p>
+                    <div class="teamdiv">
+                        <div class="homepageabovefooterfirst">
+                            <img class="teamimage" src="./images/team1.jpg"/>
+                            <h3 class="teamname">Nicky Abraham</h2>
+                            <h5 class="teamcontent">Executive Advisor</h4>
+                        </div>
+                        <div class="homepageabovefootersecond">
+                            <img class="teamimage" src="./images/team2.jpg"/>
+                            <h3 class="teamname">Mike Hussey</h2>
+                            <h5 class="teamcontent">Vice President</h4>
+                        </div>
+                        <div class="homepageabovefooterthird">
+                            <img class="teamimage" src="./images/team3.jpg"/>
+                            <h3 class="teamname">Robert Patricia</h2>
+                            <h5 class="teamcontent">CEO and President</h4>
+                        </div>
+                        <div class="homepageabovefooterthird">
+                            <img class="teamimage" src="./images/team4.jpg"/>
+                            <h3 class="teamname">James Marry</h3>
+                            <h5 class="teamcontent">Chief Advisor</h4>
+                        </div>
+                        <div class="homepageabovefooterthird">
+                            <img class="teamimage" src="./images/team5.jpg"/>
+                            <h3 class="teamname">Jennifer Aniston</h3>
+                            <h5 class="teamcontent">Technical Head</h4>
+                        </div>
                     </div>
                 </div>
             </div>

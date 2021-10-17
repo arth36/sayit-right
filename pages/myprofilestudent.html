@@ -5,6 +5,18 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -42,6 +54,12 @@
                     </li>
                     <li>
                         <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -60,6 +78,7 @@
                             <th class="thclass" scope="col">Date</th>
                             <th class="thclass" scope="col">Location</th>
                             <th class="thclass" scope="col">Time</th>
+                            <th class="thclass" scope="col">Chat</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -69,6 +88,7 @@
                             <td class="tdclass" data-label="Name">02/04/21</td>
                             <td class="tdclass" data-label="Phone">SEIR</td>
                             <td class="tdclass" data-label="Type">02:00pm</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                         <tr>
                             <td class="tdclass">2</td>
@@ -76,6 +96,7 @@
                             <td class="tdclass" data-label="Name">02/04/21</td>
                             <td class="tdclass" data-label="Phone">SEIR</td>
                             <td class="tdclass" data-label="Type">02:00pm</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                         <tr>
                             <td class="tdclass">3</td>
@@ -83,6 +104,7 @@
                             <td class="tdclass" data-label="Name">02/04/21</td>
                             <td class="tdclass" data-label="Phone">SEIR</td>
                             <td class="tdclass" data-label="Type">02:00pm</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                         <tr>
                             <td class="tdclass">4</td>
@@ -90,6 +112,7 @@
                             <td class="tdclass" data-label="Name">02/04/21</td>
                             <td class="tdclass" data-label="Phone">SEIR</td>
                             <td class="tdclass" data-label="Type">02:00pm</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -100,40 +123,40 @@
                     <thead>
                         <tr>
                             <th class="thclass">#</th>
-                            <th class="thclass" scope="col">Submission</th>
-                            <th class="thclass" scope="col">Grade</th>
                             <th class="thclass" scope="col">ID</th>
                             <th class="thclass" scope="col">Name</th>
+                            <th class="thclass" scope="col">Submission</th>
+                            <th class="thclass" scope="col">Grade</th>
                         </tr>
                     </thead>                    
                     <tbody>
                         <tr>
                             <td class="tdclass">1</td>
+                            <td class="tdclass" data-label="ID">axm9538</td>
+                            <td class="tdclass" data-label="Name">Mike Jhones</td>
                             <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                         <tr>
                             <td class="tdclass">2</td>
                             <td class="tdclass" data-label="Submission">zip</td>
+                            <td class="tdclass" data-label="Name">Mike Jhones</td>
+                            <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                         <tr>
                             <td class="tdclass">3</td>
                             <td class="tdclass" data-label="Submission">zip</td>
+                            <td class="tdclass" data-label="Name">Mike Jhones</td>
+                            <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                         <tr>
                             <td class="tdclass">4</td>
                             <td class="tdclass" data-label="Submission">zip</td>
+                            <td class="tdclass" data-label="Name">Mike Jhones</td>
+                            <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                     </tbody>
                 </table>
@@ -149,8 +172,8 @@
                         <button type="submit" class="announcementsubmitbutton">Upload Recording</button>
                     </div>
                 </div>
-                <div class="profileannouncementformdiv">
-                    <form>
+                <div class="studenthomeworksubmitformdiv">
+                    <form class="homeworksubmitform">
                         <p class="profileannouncementp">Submit Homework</p>
                         <div class="announcementdiv">
                             <div class="announcementinputdiv">

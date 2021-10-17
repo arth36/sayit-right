@@ -11,6 +11,10 @@
                 $("body").toggleClass("opennav");
             });
         });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
     </script>
 </head> 
 <body>
@@ -49,6 +53,12 @@
                     </li>
                     <li>
                         <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="login.html">Login</a>

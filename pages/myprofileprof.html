@@ -1,3 +1,8 @@
+<!---
+Name: Ahir Kunjal, UTA ID: 1001877263
+Name: Modi Arth, UTA ID: 1001979538
+Name: Sheth Devanshi, UTA ID: 1001959019
+--->
 <head>
     <meta charset="utf-8">
     <title>Admin</title>
@@ -5,6 +10,18 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type = "text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navtoggle").click(function(){
+                $("body").toggleClass("opennav");
+            });
+        });
+        $(".nav li a").click(function(){
+            var target = $(this).parent().children(".nav li ul");
+            $(target).slideToggle();
+        });
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -42,6 +59,12 @@
                     </li>
                     <li>
                         <a href="#">My profile</a>
+                        <ul>
+                            <li><a href="../pages/myprofileadmin.html">Manage Admin</a></li>
+                            <li><a href="../pages/myprofilestudent.html">Manage Student</a></li>
+                            <li><a href="../pages/myprofileprof.html">Manage Professor</a></li>
+                            <li><a href="../pages/myprofileadvisor.html">Manage Advisor</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -60,6 +83,7 @@
                             <th scope="col">Name</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Type</th>
+                            <th class="thclass" scope="col">Chat</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,29 +91,33 @@
                             <td>1</td>
                             <td class="tdclass" data-label="ID">axm9538</td>
                             <td class="tdclass" data-label="Name">Arth Modi</td>
-                            <td class="tdclass" data-label="Phone">6825528689</td>
+                            <td class="tdclass" data-label="Phone">6825528789</td>
                             <td class="tdclass" data-label="Type">W</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
-                            <td class="tdclass" data-label="Phone">6825528689</td>
+                            <td class="tdclass" data-label="ID">das9019</td>
+                            <td class="tdclass" data-label="Name">Devanshi Sheth</td>
+                            <td class="tdclass" data-label="Phone">6825527678</td>
                             <td class="tdclass" data-label="Type">W</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
-                            <td class="tdclass" data-label="Phone">6825528689</td>
+                            <td class="tdclass" data-label="ID">kxa7263</td>
+                            <td class="tdclass" data-label="Name">Kunjal Ahir</td>
+                            <td class="tdclass" data-label="Phone">6825526565</td>
                             <td class="tdclass" data-label="Type">W</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
-                            <td class="tdclass" data-label="Phone">6825528689</td>
+                            <td class="tdclass" data-label="ID">asm6767</td>
+                            <td class="tdclass" data-label="Name">Mike phillips</td>
+                            <td class="tdclass" data-label="Phone">6825524756</td>
                             <td class="tdclass" data-label="Type">W</td>
+                            <td class="tdclass" data-label="Type"><a href="chat_students.html"><img class="chaticon" src="../images/chat.png"/></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -100,40 +128,40 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th scope="col">Submission</th>
-                            <th scope="col">Grade</th>
                             <th scope="col">ID</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Submission</th>
+                            <th scope="col">Grade</th>
                         </tr>
                     </thead>                    
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td class="tdclass" data-label="Submission">zip</td>
-                            <td class="tdclass" data-label="Grade">A</td>
                             <td class="tdclass" data-label="ID">axm9538</td>
                             <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Submission">zip</td>
+                            <td class="tdclass" data-label="Grade">A</td>
                         </tr>
                         <tr>
                             <td>2</td>
+                            <td class="tdclass" data-label="ID">das9019</td>
+                            <td class="tdclass" data-label="Name">Devanshi Sheth</td>
                             <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                         <tr>
                             <td>3</td>
+                            <td class="tdclass" data-label="ID">kxa7263</td>
+                            <td class="tdclass" data-label="Name">Kunjal Ahir</td>
                             <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                         <tr>
                             <td>4</td>
+                            <td class="tdclass" data-label="ID">asm6767</td>
+                            <td class="tdclass" data-label="Name">Mike phillips</td>
                             <td class="tdclass" data-label="Submission">zip</td>
                             <td class="tdclass" data-label="Grade">A</td>
-                            <td class="tdclass" data-label="ID">axm9538</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
                         </tr>
                     </tbody>
                 </table>
@@ -145,45 +173,45 @@
                         <tr>
                             <th>#</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Language</th>
                             <th scope="col">Recording</th>
                             <th scope="col">Action</th>
-                            <th scope="col">Language</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
                             <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Language">E</td>
                             <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
                             <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
-                            <td class="tdclass" data-label="Language">E</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Name">Kunjal Ahir</td>
+                            <td class="tdclass" data-label="Language">E</td>
                             <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
                             <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
-                            <td class="tdclass" data-label="Language">E</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Name">Devanshi Sheth</td>
+                            <td class="tdclass" data-label="Language">E</td>
                             <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
                             <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
-                            <td class="tdclass" data-label="Language">E</td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td class="tdclass" data-label="Name">Arth Modi</td>
+                            <td class="tdclass" data-label="Name">Mike phillips</td>
+                            <td class="tdclass" data-label="Language">E</td>
                             <td class="tdclass" data-label="Recording"><img src="../images/sound.png"/></td>
                             <td class="tdclass" data-label="Action"><img style="margin-right: 10px;" src="../images/edit.png"/><img src="../images/delete.png"/></td>
-                            <td class="tdclass" data-label="Language">E</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="profileannouncementformdiv">
-                <form>
+                <form class="adminannouncement">
                     <p class="profileannouncementp">Make an Announcement</p>
                     <div class="announcementdiv">
                         <div class="announcementinputdiv">
