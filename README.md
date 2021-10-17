@@ -22,5 +22,5 @@ This Plugin is not available on wordpress, user has to manually activate the plu
   * >For git code click [here]( https://github.com/arth36/sayit-right )
 
 References:- 
-  * >For images [here]( https://unsplash.com/ )
-  * >For icons [here]( https://www.flaticon.com/ )
+  * >For images we [used]( https://unsplash.com/ )
+  * >For icons we [used]( https://www.flaticon.com/ )
