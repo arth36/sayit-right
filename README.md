@@ -6,7 +6,7 @@
 
 # For Developers :-
 
-## List of main directory and file
+## List of main directories and files
 
   * >`pages` :- this directory consist of all html files.
   * >`js` :- this directory consist of javascript files.
