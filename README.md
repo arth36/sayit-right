@@ -19,6 +19,6 @@
   * >For Demo click [here]( https://axm9538.uta.cloud/homepage.html )
   * >For git code click [here]( https://github.com/arth36/sayit-right )
 
-References:- 
+## References:- 
   * >For images we [used]( https://unsplash.com/ )
   * >For icons we [used]( https://www.flaticon.com/ )
